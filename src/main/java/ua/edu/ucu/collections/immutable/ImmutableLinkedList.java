@@ -12,7 +12,7 @@ public class ImmutableLinkedList implements ImmutableList {
     public ImmutableLinkedList() {
         head = last = new Node(null);
     }
-    public ImmutableLinkedList(Node Head){
+    private ImmutableLinkedList(Node Head){
         this.head = Head;
 
         Node current = head.getNext();

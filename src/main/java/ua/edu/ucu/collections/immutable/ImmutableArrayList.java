@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ImmutableArrayList implements ImmutableList{
     private Object[] myArray;
     private int actSize = 0;
-    public ImmutableArrayList(Object[] arr) {
+    private ImmutableArrayList(Object[] arr) {
         myArray = arr;
     }
 
