@@ -9,11 +9,11 @@ public class Stack {
     }
     public Object pop(){
         Object it = myStack.getLast();
-        myStack.removeLast();
+        myStack = myStack.removeLast();
         return it;
     }
     public void pop(Object e){
-        myStack.addLast(e);
+        myStack = myStack.addLast(e);
     }
     public  String toString(){
         return myStack.toString();

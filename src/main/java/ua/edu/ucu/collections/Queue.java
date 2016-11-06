@@ -8,15 +8,16 @@ public class Queue {
     private ImmutableLinkedList myList = new ImmutableLinkedList();
 
     public Object peek(){
+
         return myList.getFirst();
     }
     public Object dequeue(){
         Object it = myList.getFirst();
-        myList.removeFirst();
+        myList = myList.removeFirst();
         return it;
     }
     public void enqueue(Object e){
-        myList.addLast(e);
+        myList = myList.addLast(e);
     }
     public String toString(){
         return myList.toString();
